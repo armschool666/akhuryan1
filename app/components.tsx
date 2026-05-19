@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "../i18n/navigation";
 import { LanguageSwitcher } from "./lang-switcher";
+import { MobileMenu, type MobileNavItem } from "./mobile-menu";
 
 // Navigation structure — hrefs are locale-independent; labels come from messages
 const NAV_ITEMS = [
@@ -101,6 +102,19 @@ const NAV_ITEMS = [
 export async function SiteShell({ children }: { children: React.ReactNode }) {
   const t = await getTranslations();
 
+  const navData: MobileNavItem[] = NAV_ITEMS.map((item) => ({
+    key: item.key,
+    href: item.href,
+    label: t(`nav.${item.key}` as Parameters<typeof t>[0]),
+    children: "children" in item
+      ? item.children.map((child) => ({
+          key: child.key,
+          href: child.href,
+          label: t(`nav.${child.key}` as Parameters<typeof t>[0]),
+        }))
+      : undefined,
+  }));
+
   return (
     <>
       <header className="site-header">
@@ -136,7 +150,10 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
             );
           })}
         </nav>
-        <LanguageSwitcher />
+        <div className="header-end">
+          <LanguageSwitcher />
+          <MobileMenu items={navData} />
+        </div>
       </header>
       <main>{children}</main>
       <footer className="footer">
