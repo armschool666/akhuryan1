@@ -1,0 +1,36 @@
+
+> panik-school-website@0.1.0 dev
+> next dev --hostname 127.0.0.1
+
+▲ Next.js 16.2.3 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+✓ Ready in 1375ms
+
+ GET / 200 in 1415ms (next.js: 569ms, application-code: 847ms)
+ GET /admin 200 in 447ms (next.js: 113ms, application-code: 335ms)
+ GET /api/materials 200 in 285ms (next.js: 234ms, application-code: 51ms)
+ GET /section/about/announcements 200 in 997ms (next.js: 792ms, generate-params: 696ms, application-code: 205ms)
+ GET /api/materials 200 in 47ms (next.js: 10ms, application-code: 37ms)
+ GET /api/materials 200 in 26ms (next.js: 7ms, application-code: 19ms)
+ GET / 200 in 95ms (next.js: 13ms, application-code: 82ms)
+ GET /section/about/announcements 200 in 121ms (next.js: 31ms, generate-params: 20ms, application-code: 91ms)
+ GET /api/materials 200 in 28ms (next.js: 11ms, application-code: 17ms)
+ GET /api/materials 200 in 21ms (next.js: 5ms, application-code: 16ms)
+ GET / 200 in 110ms (next.js: 13ms, application-code: 98ms)
+ GET / 200 in 144ms (next.js: 10ms, application-code: 133ms)
+ GET / 200 in 47ms (next.js: 18ms, application-code: 29ms)
+ GET / 200 in 81ms (next.js: 7ms, application-code: 73ms)
+ GET /section/about 200 in 801ms (next.js: 616ms, generate-params: 526ms, application-code: 185ms)
+ GET /section/councils 200 in 154ms (next.js: 28ms, generate-params: 17ms, application-code: 126ms)
+ GET /section/events 200 in 116ms (next.js: 28ms, generate-params: 19ms, application-code: 88ms)
+ GET /section/contact 200 in 116ms (next.js: 24ms, generate-params: 14ms, application-code: 92ms)
+ GET / 200 in 130ms (next.js: 9ms, application-code: 121ms)
+ GET /section/events 200 in 112ms (next.js: 29ms, generate-params: 18ms, application-code: 83ms)
+ GET / 200 in 33ms (next.js: 10ms, application-code: 23ms)
+ GET / 200 in 83ms (next.js: 9ms, application-code: 74ms)
+ GET /section/about/announcements 200 in 130ms (next.js: 23ms, generate-params: 15ms, application-code: 106ms)
+ GET /api/materials 200 in 17ms (next.js: 4ms, application-code: 14ms)
+ GET /api/materials 200 in 22ms (next.js: 4ms, application-code: 18ms)
+ GET /admin 200 in 278ms (next.js: 14ms, application-code: 264ms)
+ GET /api/materials 200 in 29ms (next.js: 8ms, application-code: 21ms)
