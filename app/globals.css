@@ -369,6 +369,16 @@ img {
   color: #ffffff;
 }
 
+.subhero--compact {
+  grid-template-columns: 1fr;
+  min-height: auto;
+}
+
+.subhero--compact > div {
+  padding: 40px 5vw;
+  max-width: min(860px, 100%);
+}
+
 .subhero img {
   width: 100%;
   height: 100%;
