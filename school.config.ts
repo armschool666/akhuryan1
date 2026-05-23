@@ -54,7 +54,7 @@ export const schoolConfig: SchoolConfig = {
   },
   social: {
     facebook: "https://www.facebook.com/hatsikvil1966",
-    youtube: "https://www.youtube.com/",
+    youtube: "",
   },
   map: {
     lat: 40.8472,

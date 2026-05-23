@@ -19,7 +19,7 @@ export default async function ContactPage() {
         />
         <div>
           <Link href="/">{t("homeLink")}</Link>
-          <h1>{schoolConfig.name[locale]}</h1>
+          <h1>{t("eyebrow")}</h1>
           <p>{t("description")}</p>
         </div>
       </section>

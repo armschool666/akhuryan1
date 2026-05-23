@@ -45,7 +45,7 @@
     "aboutReports": "Հաշվետվություններ",
     "aboutLicense": "Լիցենզիա",
     "aboutInternalEvaluation": "Ներքին գնահատում",
-    "aboutEvaluationPlan": "Գնահատման ծրագիր",
+    "aboutEvaluationPlan": "Գնումների պլան",
     "councils": "Խորհուրդներ",
     "councilsJointManagement": "Միացյալ կառավարման խորհուրդ",
     "councilsPedagogical": "Մանկավարժական խորհուրդ",
@@ -103,7 +103,7 @@
     "homeLink": "Գլխավոր",
     "structureEyebrow": "Բաժնի կառուցվածք",
     "materialsEyebrow": "Նյութեր",
-    "materialsTitle": "բաժինի նյութեր",
+    "materialsTitle": "Բաժնի նյութեր",
     "openFile": "Բացել ֆայլը",
     "noMaterials": "Այս բաժնում նյութեր դեռ չկան։"
   },

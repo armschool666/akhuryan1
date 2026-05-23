@@ -46,6 +46,11 @@ img {
   padding: 18px 5vw;
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--line);
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-header--hidden {
+  transform: translateY(-100%);
 }
 
 .brand {
