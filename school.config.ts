@@ -46,19 +46,19 @@ export interface SchoolConfig {
 }
 
 export const schoolConfig: SchoolConfig = {
-  domain: "hatsikschool.am",
-  email: "info@hatsikschool.am",
+  domain: "maralik2school.am",
+  email: "maralik-tiv2@mail.ru",
   phone: {
-    display: "+374 93 26-71-26",
-    tel: "+37493267126",
+    display: "+374 98-27-07-69",
+    tel: "+37498270769",
   },
   social: {
-    facebook: "https://www.facebook.com/hatsikvil1966",
+    facebook: "https://www.facebook.com/t.iv.erku.dproc.maralik",
     youtube: "",
   },
   map: {
-    lat: 40.8472,
-    lon: 43.8741,
+    lat: 40.577581, 
+    lon: 43.866813,
     bboxRadius: 0.02,
   },
   assets: {
@@ -66,14 +66,14 @@ export const schoolConfig: SchoolConfig = {
     heroImage: "/school.jpg",
   },
   name: {
-    hy: "Հացիկի միջնակարգ դպրոց",
-    ru: "Средняя школа села Ацик",
-    en: "Hatsik Secondary School",
+    hy: "Մարալիկի թիվ 2 հիմնական դպրոց",
+    ru: "Начальная школа Маралик № 2",
+    en: "Maralik Primary School No. 2",
   },
   shortName: {
-    hy: "Հացիկ",
-    ru: "Ацик",
-    en: "Hatsik",
+    hy: "Մարալիկ 2",
+    ru: "Маралик 2",
+    en: "Maralik 2",
   },
   tagline: {
     hy: "Պաշտոնական տեղեկատվական հարթակ",
@@ -81,9 +81,9 @@ export const schoolConfig: SchoolConfig = {
     en: "Official information portal",
   },
   address: {
-    hy: "ՀՀ Շիրակի մարզ, Հացիկ գյուղ, N13 փողոց, փակուղի 1, շենք 3",
-    ru: "РА, Ширакская область, село Ацик, ул. N13, тупик 1, дом 3",
-    en: "Shirak Region, Hatsik village, N13 St., dead-end 1, building 3, Armenia",
+    hy: "ՀՀ Շիրակի մարզ, քաղաք Մարալիկ, Կոլտնտեսականների 2 / 1",
+    ru: "РА Ширакская область г. Маралик, Кольтнецекёнканер 2/1",
+    en: "RA Shirak region city Maralik, Koltnetseksyonkaner 2 / 1",
   },
   region: {
     hy: "Շիրակի մարզ",

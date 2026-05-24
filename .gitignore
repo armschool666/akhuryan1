@@ -43,3 +43,7 @@ CONVERSATION_AND_REQUIREMENTS.md
 /*.png
 /*.gif
 /*.webp
+dev.bat
+screenshot-*.png
+desktop-*.png
+mobile-*.png

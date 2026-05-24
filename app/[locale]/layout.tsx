@@ -4,6 +4,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
 import { schoolConfig, type SchoolLocale } from "../../school.config";
+import { HtmlLangSetter } from "../html-lang";
 
 export async function generateMetadata({
   params,
@@ -41,12 +42,9 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} data-scroll-behavior="smooth">
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <HtmlLangSetter locale={locale} />
+      {children}
+    </NextIntlClientProvider>
   );
 }
