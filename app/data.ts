@@ -25,8 +25,7 @@ export const sections: Section[] = [
     title: "Դպրոցի մասին",
     description:
       "Դպրոցի պատմություն, հայտարարություններ, ընդունելության կարգ, թափուր աշխատատեղեր և հաշվետվությունների միասնական արխիվ։",
-    image:
-      "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80",
+    image: "/school.jpg",
     links: [
       {
         slug: "history",

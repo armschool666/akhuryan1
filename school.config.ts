@@ -46,19 +46,19 @@ export interface SchoolConfig {
 }
 
 export const schoolConfig: SchoolConfig = {
-  domain: "maralik2school.am",
-  email: "maralik-tiv2@mail.ru",
+  domain: "akhuryan1school.am",
+  email: "akhuryan1@schools.am",
   phone: {
-    display: "+374 98-27-07-69",
-    tel: "+37498270769",
+    display: "+374 312 70850",
+    tel: "+37431270850",
   },
   social: {
     facebook: "https://www.facebook.com/t.iv.erku.dproc.maralik",
     youtube: "",
   },
   map: {
-    lat: 40.577581, 
-    lon: 43.866813,
+    lat: 40.781478, 
+    lon: 43.885959,
     bboxRadius: 0.02,
   },
   assets: {
@@ -66,14 +66,14 @@ export const schoolConfig: SchoolConfig = {
     heroImage: "/school.jpg",
   },
   name: {
-    hy: "Մարալիկի թիվ 2 հիմնական դպրոց",
-    ru: "Начальная школа Маралик № 2",
-    en: "Maralik Primary School No. 2",
+    hy: "Ախուրյանի թիվ 1 հիմնական դպրոց",
+    ru: "Начальная школа Ахурян № 1",
+    en: "Akhuryan Basic School No. 1",
   },
   shortName: {
-    hy: "Մարալիկ 2",
-    ru: "Маралик 2",
-    en: "Maralik 2",
+    hy: "Ախուրյան 1",
+    ru: "Ахурян 1",
+    en: "Akhuryan 1",
   },
   tagline: {
     hy: "Պաշտոնական տեղեկատվական հարթակ",
@@ -81,9 +81,9 @@ export const schoolConfig: SchoolConfig = {
     en: "Official information portal",
   },
   address: {
-    hy: "ՀՀ Շիրակի մարզ, քաղաք Մարալիկ, Կոլտնտեսականների 2 / 1",
-    ru: "РА Ширакская область г. Маралик, Кольтнецекёнканер 2/1",
-    en: "RA Shirak region city Maralik, Koltnetseksyonkaner 2 / 1",
+    hy: "ՀՀ Շիրակի մարզ, գյուղ Ախուրյան, Գյումրու խճուղի 16",
+    ru: "Ширакская область Республики Армения, село Ахурян, Гюмрийская трасса 16",
+    en: "Shirak region of the Republic of Armenia, Akhuryan village, Gyumri highway 16",
   },
   region: {
     hy: "Շիրակի մարզ",
