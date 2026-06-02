@@ -28,9 +28,7 @@ export default async function ChildSectionPage({
 
   return (
     <SiteShell>
-      <section className="subhero">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={section.image} alt={page.title} loading="lazy" />
+      <section className="subhero subhero--compact">
         <div>
           <Link href={`/section/${section.slug}`}>{section.title}</Link>
           <h1>{page.title}</h1>
