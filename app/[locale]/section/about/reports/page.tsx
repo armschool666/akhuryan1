@@ -2,6 +2,9 @@
 import { Link } from "../../../../../i18n/navigation";
 import { SiteShell } from "../../../../components";
 import { sections } from "../../../../data";
+import { readMaterials } from "../../../../materials-store";
+
+export const dynamic = "force-dynamic";
 
 const BASE_PATH = "/hashvetvutiun";
 const columns = [
@@ -133,6 +136,11 @@ export default async function ReportsPage() {
     notFound();
   }
 
+  const allMaterials = await readMaterials();
+  const dynamicEntries = allMaterials.filter(
+    (e) => e.sectionSlug === "about" && e.pageSlug === "reports",
+  );
+
   return (
     <SiteShell>
       <section className="subhero">
@@ -146,25 +154,42 @@ export default async function ReportsPage() {
 
       <section className="section-wrap">
         <div className="reports-grid">
-          {columns.map((col) => (
-            <div key={col.title} className="reports-column">
-              <div className="reports-column-header">{col.title}</div>
-              <ul className="reports-list">
-                {col.files.map((file, i) => (
-                  <li key={i}>
-                    <a
-                      href={`${BASE_PATH}/${file.path}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="reports-link"
-                    >
-                      {file.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {columns.map((col) => {
+            const added = dynamicEntries.filter((e) => e.body === col.title);
+            return (
+              <div key={col.title} className="reports-column">
+                <div className="reports-column-header">{col.title}</div>
+                <ul className="reports-list">
+                  {col.files.map((file, i) => (
+                    <li key={i}>
+                      <a
+                        href={`${BASE_PATH}/${file.path}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="reports-link"
+                      >
+                        {file.name}
+                      </a>
+                    </li>
+                  ))}
+                  {added.map((entry) =>
+                    entry.files.map((f, fi) => (
+                      <li key={`${entry.id}-${fi}`}>
+                        <a
+                          href={f.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="reports-link"
+                        >
+                          {entry.title}
+                        </a>
+                      </li>
+                    )),
+                  )}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </section>
     </SiteShell>

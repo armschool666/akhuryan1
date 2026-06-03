@@ -17,6 +17,7 @@ import {
 import { adminStrings as s } from "./admin-strings";
 import { MaterialForm, type FormState } from "./material-form";
 import { MaterialList } from "./material-list";
+import { ReportsAddForm } from "./reports-add-form";
 
 const firstSection = sections[0];
 const firstPage = firstSection.links[0];
@@ -165,6 +166,7 @@ export function AdminPanel() {
   }
 
   const savedEntry = savedEntryId ? entries.find((e) => e.id === savedEntryId) ?? null : null;
+  const isReportsPage = form.sectionSlug === "about" && form.pageSlug === "reports";
 
   return (
     <div>
@@ -175,6 +177,15 @@ export function AdminPanel() {
       </div>
 
       <section className="admin-grid">
+        {isReportsPage ? (
+          <ReportsAddForm
+            onSaved={() =>
+              fetchMaterials()
+                .then(setEntries)
+                .catch(() => setMessage(s.loadFailed))
+            }
+          />
+        ) : (
         <MaterialForm
           form={form}
           onFormChange={setForm}
@@ -187,6 +198,7 @@ export function AdminPanel() {
           onSubmit={handleSubmit}
           onCancelEdit={resetForm}
         />
+        )}
 
         <MaterialList
           entries={entries}
